@@ -1,5 +1,5 @@
 const config = {
-  API_ENDPOINT: 'http://localhost:8080/api',
+  API_ENDPOINT: 'https://obscure-ridge-25630.herokuapp.com/api',
   API_KEY: 'extra-secret',
 };
 
