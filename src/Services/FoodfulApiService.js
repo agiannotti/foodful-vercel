@@ -30,7 +30,7 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },
 
@@ -42,7 +42,8 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      // console.log('stuff', res.json());
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },
 
@@ -54,20 +55,22 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },
 
-  patchResource(id, title, content, zipcode, date_published) {
+  patchResource(resource, id) {
     return fetch(`${ResourceURL}/${id}`, {
-      method: 'POST',
-      body: JSON.stringify(id, title, content, zipcode, date_published),
+      method: 'PATCH',
+      body: JSON.stringify(resource),
       headers: {
         'Content-type': 'application/json',
         Authorization: Authorization,
       },
     }).then((res) => {
-      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      if (!res.ok) {
+        return res.json().then((e) => Promise.reject(e));
+      }
     });
   },
 
@@ -97,7 +100,7 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
     // testing if state can be modified through context to use goBack() + assign targetResourceId
     // .then((data) => {addComment(data); this.setState({ content: '', date_created: '', resource_id: '',});
@@ -112,7 +115,7 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },
 
@@ -124,7 +127,7 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },
 

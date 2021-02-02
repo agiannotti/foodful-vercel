@@ -3,50 +3,97 @@ import NavBar from '../Nav/NavBar';
 import './EditResource.css';
 import FoodfulContext from '../../Context/FoodfulContext';
 import FoodfulApiService from '../../Services/FoodfulApiService';
-// import DeleteButton from '../Utilities/DeleteButton';
+import DeleteButton from '../Utilities/DeleteButton';
 
 export default class EditResource extends Component {
   static contextType = FoodfulContext;
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    const { title, content, zipcode } = e.target;
-    FoodfulApiService.patchResource(
-      title.title.value,
-      content.content.value,
-      zipcode.zipcode.value
-    )
-      .then((res) => this.content.editResource(res))
-      .catch(this.context.setError);
+  state = {
+    title: '',
+    content: '',
+    zipcode: '',
+    error: false,
   };
 
-  handleClickCancel = () => {
-    this.props.history.push('/');
+  componentDidMount = () => {
+    console.log('this', this.props);
+    FoodfulApiService.getById(this.props.match.params.id).then((resource) => {
+      // console.log('resource', resource);
+      this.setState({
+        title: resource.title,
+        content: resource.content,
+        zipcode: resource.zipcode,
+      });
+    });
+  };
+
+  handleFormChange = (e) => {
+    this.setState({ touched: true });
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleEditSubmit = (e) => {
+    e.preventDefault();
+    const resource = {
+      title: this.state.title,
+      content: this.state.content,
+      zipcode: this.state.zipcode,
+    };
+    FoodfulApiService.patchResource(resource, this.props.match.params.id)
+      .then((res) => {
+        return this.props.history.push('/locate');
+      })
+      .catch((error) => this.context.setError(error));
   };
 
   render() {
-    const { resource } = this.props;
-    console.log('resource', resource);
+    const { error, resource } = this.context;
+    let response;
+    if (error) {
+      response = <div>Error</div>;
+    }
+    // console.log('render context', this.context, this.props);
     return (
       <div>
         <NavBar />
         <div>
-          <form id='edit_resource_form'>
+          <form
+            id='edit_resource_form'
+            onSubmit={(e) => this.handleEditSubmit(e)}
+          >
             <div className='edit_resource_form_css'>
-              <label>Title:</label>
-              <input type='text' name='title' />
-              <label>Description:</label>
-              <input type='text' name='title' />
-              <label>Zipcode:</label>
-              <input type='select' name='title' />
-              <button
-                onSubmit={this.handleSubmit}
-                className='Edit_Submit_Button'
-                type='submit'
-              >
+              <label htmlFor='title'>Title:</label>
+              <input
+                value={this.state.title}
+                type='text'
+                name='title'
+                id='title'
+                onChange={(e) => this.handleFormChange(e)}
+                required
+              />
+              <label htmlFor='content'>Content:</label>
+              <input
+                value={this.state.content}
+                type='text'
+                name='content'
+                id='content'
+                onChange={(e) => this.handleFormChange(e)}
+                required
+              />
+              <label htmlFor='zipcode'>Zipcode:</label>
+              <input
+                value={this.state.zipcode}
+                type='text'
+                name='zipcode'
+                id='zipcode'
+                onChange={(e) => this.handleFormChange(e)}
+                required
+              />
+              <button className='Edit_Submit_Button' type='submit'>
                 Save Edit
               </button>
-              {/* <DeleteButton resource={resource} /> */}
+              {response}
+              <DeleteButton resource={resource} />
             </div>
           </form>
         </div>

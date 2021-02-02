@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './ResourceList.css';
 import { Link } from 'react-router-dom';
-import DeleteButton from '../Utilities/DeleteButton';
-// import { render } from '@testing-library/react';
-// import FoodfulApiService from '../../Services/FoodfulApiService';
 import FoodfulContext from '../../Context/FoodfulContext';
 
 export default class ResourceList extends Component {
@@ -24,12 +21,11 @@ export default class ResourceList extends Component {
               Add Comment
             </button>
           </Link>
-          <Link to='/edit'>
+          <Link to={`/edit/${resource.id}`}>
             <button className='Edit_Details_Button' type='submit'>
               Edit Details
             </button>
           </Link>
-          <DeleteButton resource={resource} />
         </div>
       </div>
     );

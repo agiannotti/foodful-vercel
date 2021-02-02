@@ -47,9 +47,6 @@ export default class LocatePage extends Component {
                 </div>
               </form>
             </div>
-            <div>
-              <label className='Zipcode'>Zip Code</label>
-            </div>
             <div className='add_button'>
               <Link to='/add'>
                 <button type='button'>Add Location</button>
