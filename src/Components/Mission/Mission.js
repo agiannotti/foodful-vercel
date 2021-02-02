@@ -8,38 +8,7 @@ export default function Mission() {
     <div>
       <NavBar />
       <br />
-      <section className='middle-section'>
-        <div>
-          <img
-            className='logo-main'
-            src={placeholder}
-            alt='placeholder'
-            width='176px'
-            height='161px'
-          />
-          <div className='main-paragraph'>
-            <p>
-              Foodful aims to unify communities by creating a platform for
-              people to share their resources.
-            </p>
-          </div>
-        </div>
-        <div>
-          <img
-            className='logo-main'
-            src={placeholder}
-            alt='placeholder'
-            width='176px'
-            height='161px'
-          />
-          <div className='main-paragraph'>
-            <p>
-              If you're hungry, or you need to feed your family, you can use
-              this app to search for free food supplies within your community.
-            </p>
-          </div>
-        </div>
-      </section>
+
       <section className='bottom-section'>
         <div>
           <img
@@ -69,6 +38,38 @@ export default function Mission() {
             <p>
               Mark a location on our map to signal a location that is currently
               providing resources.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className='middle-section'>
+        <div>
+          <img
+            className='logo-main'
+            src={placeholder}
+            alt='placeholder'
+            width='176px'
+            height='161px'
+          />
+          <div className='main-paragraph'>
+            <p>
+              Foodful aims to unify communities by creating a platform for
+              people to share their resources.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            className='logo-main'
+            src={placeholder}
+            alt='placeholder'
+            width='176px'
+            height='161px'
+          />
+          <div className='main-paragraph'>
+            <p>
+              If you're hungry, or you need to feed your family, you can use
+              this app to search for free food supplies within your community.
             </p>
           </div>
         </div>
