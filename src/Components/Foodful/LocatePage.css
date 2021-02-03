@@ -6,5 +6,23 @@
   font-size: 24px;
   color: #3d3d3d;
   border-style: none;
+
   /* filter: drop-shadow(0 0.1rem 0.1rem #000000); */
+}
+
+.add_button {
+  font-size: 24px;
+  color: #3d3d3d;
+  letter-spacing: -1px;
+  font-weight: 300;
+  margin: auto;
+  height: 80px;
+  width: 120px;
+  background-color: #dbc9c9;
+  margin-left: 4px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  border-style: none;
+  border-radius: 8px;
+  filter: drop-shadow(0 0.1rem 0.1rem #000000);
 }

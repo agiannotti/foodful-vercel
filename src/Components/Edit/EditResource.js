@@ -93,8 +93,10 @@ export default class EditResource extends Component {
               <button className='Edit_Submit_Button' type='submit'>
                 Save Edit
               </button>
-              {response}
-              <DeleteButton resource={id} />
+              <div className='error_handle'>{response}</div>
+              <div>
+                <DeleteButton resource={id} />
+              </div>
             </div>
           </form>
         </div>

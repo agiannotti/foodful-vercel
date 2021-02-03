@@ -12,24 +12,22 @@
   margin: auto;
   margin-bottom: 36px;
   padding-top: 1px;
+  padding-bottom: 10px;
   border-radius: 13px;
   border: none;
   color: #ffffff;
   background-color: #523d3d;
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
   overflow-wrap: break-word;
-  /* color: #e6dede; */
 }
 
 .Resource__heading {
-  /* margin-top: -12px; */
   margin: 10px;
-  /* padding: 0; */
 }
 
 .Resource__header {
-  margin: 5px;
-  padding-bottom: 15px;
+  margin: 15px;
+  padding: 15px;
 }
 
 .Resource__desc {
@@ -55,15 +53,18 @@
   border-style: none;
   border-radius: 8px;
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
-  /* background-color: #e6dede; */
 }
 
 .Edit_Details_Button {
-  height: 60px;
+  font-size: 23px;
+  color: #3d3d3d;
+  letter-spacing: -1px;
+  font-weight: 300;
+  height: 70px;
   width: 100px;
+  background-color: #dbc9c9;
   margin-left: 4px;
   border-style: none;
   border-radius: 8px;
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
-  /* background-color: #e6dede; */
 }

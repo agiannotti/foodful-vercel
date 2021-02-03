@@ -26,11 +26,29 @@
 
 .Edit_Submit_Button {
   text-align: center;
-  height: 45px;
-  width: 100px;
   margin: auto;
   border-radius: 5px;
   border-style: none;
-  font-family: 'Varela';
   text-align: center;
+  font-size: 24px;
+  color: #3d3d3d;
+  letter-spacing: -1px;
+  font-weight: 300;
+  height: 70px;
+  width: 115px;
+}
+
+.delete_button {
+  text-align: center;
+  margin: auto;
+  margin-top: 12px;
+  border-radius: 5px;
+  border-style: none;
+  text-align: center;
+  font-size: 20px;
+  color: #3d3d3d;
+  letter-spacing: -1px;
+  font-weight: 300;
+  height: 35px;
+  width: 90px;
 }

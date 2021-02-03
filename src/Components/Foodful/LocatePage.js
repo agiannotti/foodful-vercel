@@ -34,7 +34,7 @@ export default class LocatePage extends Component {
           <div className='Resource__header'>
             <div>
               <h2>Available Resources</h2>
-              <form className='Resource__radio'>
+              {/* <form className='Resource__radio'>
                 <label>Location Type</label>
                 <div>
                   <select>
@@ -45,13 +45,15 @@ export default class LocatePage extends Component {
                     <option value='item-3'>Custom</option>
                   </select>
                 </div>
-              </form>
+              </form> */}
             </div>
-            <div className='add_button'>
-              <Link to='/add'>
-                <button type='button'>Add Location</button>
-              </Link>
-            </div>
+            <Link to='/add'>
+              <div>
+                <button className='add_button' type='button'>
+                  Add Location
+                </button>
+              </div>
+            </Link>
           </div>
           <div className='List_Container'>
             {error ? <p className='angry'>Error</p> : this.renderResource()}

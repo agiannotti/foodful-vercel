@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <div className='border-main'>
       {/* <img src={background} alt='' srcset='' /> */}
-      <header className='tiny__header'></header>
+      {/* <header className='tiny__header'></header> */}
       <section className='App-header'>
         <NavBar />
       </section>

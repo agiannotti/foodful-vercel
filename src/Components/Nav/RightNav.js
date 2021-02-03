@@ -34,13 +34,15 @@ const Ul = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #ccc;
   font-size: 25px;
   padding: 15px 0 5px 15px;
 
   &:focus,
-  &:hover,
+  &:hover {
+    filter: drop-shadow(0 0.1rem 0.1rem #000000);
+  }
   &:visited,
   &:link,
   &:active {

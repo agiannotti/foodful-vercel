@@ -23,7 +23,12 @@ export default class DeleteButton extends Component {
     const { resource } = this.props;
     return (
       <div>
-        <button onClick={() => this.handleDelete(resource.id)}>Delete</button>
+        <button
+          className='delete_button'
+          onClick={() => this.handleDelete(resource.id)}
+        >
+          Delete
+        </button>
       </div>
     );
   }
