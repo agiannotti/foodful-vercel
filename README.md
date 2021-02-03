@@ -17,7 +17,7 @@ User can add locations and pins to a map to organize and communicate about resou
 • Description  
 • Zipcode  
 • Type of resource  
-• Date created  
+• Date created
 
 •
 
