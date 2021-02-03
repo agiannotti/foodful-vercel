@@ -35,7 +35,7 @@ export default function Main() {
         </div>
       </section>
       <br />
-      <footer className='tiny__footer'>&#169;</footer>
+      {/* <footer className='tiny__footer'>&#169;</footer> */}
     </div>
   );
 }

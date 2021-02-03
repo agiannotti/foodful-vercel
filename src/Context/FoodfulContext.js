@@ -77,6 +77,10 @@ export class FoodfulProvider extends Component {
     this.setState({ error: null });
   };
 
+  handleClick = () => {
+    this.props.history.push('/');
+  };
+
   removeFromResourceList = (id) => {
     this.setState({
       resourceList: this.state.resourceList.filter((resource) => {
@@ -99,6 +103,7 @@ export class FoodfulProvider extends Component {
       setError: this.setError,
       clearError: this.clearError,
       removeFromResourceList: this.removeFromResourceList,
+      handleClick: this.handleClick,
     };
     return (
       <FoodfulContext.Provider value={value}>

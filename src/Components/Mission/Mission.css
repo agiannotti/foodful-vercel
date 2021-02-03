@@ -1,6 +1,10 @@
+.missionBody {
+  height: 1700px;
+}
+
 .middle-section {
   text-align: center;
-  padding-top: 45px;
+  padding-top: 75px;
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -9,6 +13,8 @@
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
   border-radius: 18px;
   color: #fdfdfd;
+  width: 90%;
+  margin: auto;
 }
 
 .main-paragraph {
