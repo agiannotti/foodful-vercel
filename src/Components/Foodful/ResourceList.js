@@ -8,6 +8,10 @@ export default class ResourceList extends Component {
 
   render() {
     const { resource } = this.props;
+    console.log(
+      'date_published',
+      resource.date_published.toLocaleString('en-US', { timeZone: 'UTC' })
+    );
 
     return (
       <div className='Resource__details'>
@@ -16,11 +20,11 @@ export default class ResourceList extends Component {
           <p className='Resource__item'>{resource.content}</p>
           <p className='Resource__item'>{resource.zipcode}</p>
           <p className='Resource__item'>{resource.date_published}</p>
-          <Link to='/comment'>
+          {/* <Link to='/comment'>
             <button className='Add_Comment_Button' type='submit'>
               Add Comment
             </button>
-          </Link>
+          </Link> */}
           <Link to={`/edit/${resource.id}`}>
             <button className='Edit_Details_Button' type='submit'>
               Edit Details

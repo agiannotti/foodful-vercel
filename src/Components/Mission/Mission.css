@@ -1,7 +1,7 @@
 .middle-section {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -14,14 +14,15 @@
 .main-paragraph {
   font-size: 20px;
   font-weight: 500;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: auto;
+  width: 80%;
+  padding: 25px;
 }
 
 .bottom-section {
   color: #000000;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   text-align: center;

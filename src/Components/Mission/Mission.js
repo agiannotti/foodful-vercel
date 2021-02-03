@@ -1,11 +1,11 @@
 import React from 'react';
 import NavBar from '../Nav/NavBar';
 import placeholder from '../../Images/Convention-logo.png';
-// import './Mission.css';
+import './Mission.css';
 
 export default function Mission() {
   return (
-    <div>
+    <div className='missionBody'>
       <NavBar />
       <br />
 

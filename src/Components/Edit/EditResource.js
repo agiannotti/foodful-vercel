@@ -47,7 +47,8 @@ export default class EditResource extends Component {
   };
 
   render() {
-    const { error, resource } = this.context;
+    const { error } = this.context;
+    const id = this.props.match.params.id;
     let response;
     if (error) {
       response = <div>Error</div>;
@@ -93,7 +94,7 @@ export default class EditResource extends Component {
                 Save Edit
               </button>
               {response}
-              <DeleteButton resource={resource} />
+              <DeleteButton resource={id} />
             </div>
           </form>
         </div>
