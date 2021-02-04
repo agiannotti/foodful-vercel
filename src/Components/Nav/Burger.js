@@ -16,7 +16,7 @@ const StyledBurger = styled.div`
     filter: drop-shadow(0 0 0.1rem #000000);
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 2000px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
