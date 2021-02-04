@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
   width: 100%;
@@ -13,14 +14,27 @@ const Nav = styled.nav`
   .logo {
     padding: 3px 0 12px 12px;
     font-weight: 1200px;
-    font-size: 20px;
+    font-size: 18px;
+    color: black;
+
+    &:focus,
+    &:hover {
+      filter: drop-shadow(0 0 0.1rem #000000);
+    }
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
   }
 `;
 
 const NavBar = () => {
   return (
     <Nav>
-      <div className='logo'>Foodful</div>
+      <Link to='/' style={{ textDecoration: 'none' }}>
+        <div className='logo'>Foodful</div>
+      </Link>
       <Burger />
     </Nav>
   );

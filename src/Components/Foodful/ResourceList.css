@@ -64,7 +64,11 @@
   width: 100px;
   background-color: #dbc9c9;
   margin-left: 4px;
-  border-style: none;
+  border: 1px solid black;
   border-radius: 8px;
-  filter: drop-shadow(0 0.1rem 0.1rem #000000);
+}
+
+.Edit_Details_Button:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.1rem #000000);
 }

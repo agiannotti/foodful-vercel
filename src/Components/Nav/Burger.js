@@ -11,6 +11,11 @@ const StyledBurger = styled.div`
   z-index: 20;
   display: none;
 
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.1rem #000000);
+  }
+
   @media (max-width: 1200px) {
     display: flex;
     justify-content: space-around;

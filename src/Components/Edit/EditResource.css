@@ -28,7 +28,7 @@
   text-align: center;
   margin: auto;
   border-radius: 5px;
-  border-style: none;
+  border-style: 1px solid #3d3d3d;
   text-align: center;
   font-size: 24px;
   color: #3d3d3d;
@@ -39,11 +39,11 @@
 }
 
 .delete_button {
+  border-style: 1px solid #3d3d3d;
   text-align: center;
   margin: auto;
   margin-top: 12px;
   border-radius: 5px;
-  border-style: none;
   text-align: center;
   font-size: 20px;
   color: #3d3d3d;
@@ -51,4 +51,14 @@
   font-weight: 300;
   height: 35px;
   width: 90px;
+}
+
+.Edit_Submit_Button:hover {
+  filter: drop-shadow(0 0.1rem 0.1rem #000000);
+  cursor: pointer;
+}
+
+.delete_button:hover {
+  filter: drop-shadow(0 0.1rem 0.1rem #000000);
+  cursor: pointer;
 }
