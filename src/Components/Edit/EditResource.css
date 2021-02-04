@@ -43,6 +43,7 @@ h1 {
   font-weight: 300;
   height: 70px;
   width: 115px;
+  background-color: #efefef;
 }
 
 .delete_button {
@@ -58,6 +59,7 @@ h1 {
   font-weight: 300;
   height: 35px;
   width: 90px;
+  background-color: #efefef;
 }
 
 .Edit_Submit_Button:hover {
