@@ -53,10 +53,10 @@ export default class EditResource extends Component {
     if (error) {
       response = <div>Error</div>;
     }
-    // console.log('render context', this.context, this.props);
     return (
       <div>
         <NavBar />
+        <h1>Edit Resource</h1>
         <div>
           <form
             id='edit_resource_form'

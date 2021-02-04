@@ -4,14 +4,21 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 98%;
+  width: 88%;
   margin: auto;
+  margin-top: 20px;
   background-color: #3d3d3d;
-  color: aliceblue;
+  color: #ffffff;
   font-size: 30px;
   font-weight: 600;
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
   border-radius: 14px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -28,7 +35,7 @@
   text-align: center;
   margin: auto;
   border-radius: 5px;
-  border-style: 1px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   text-align: center;
   font-size: 24px;
   color: #3d3d3d;
@@ -39,7 +46,7 @@
 }
 
 .delete_button {
-  border-style: 1px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
   text-align: center;
   margin: auto;
   margin-top: 12px;

@@ -35,14 +35,24 @@ export default class AddResource extends Component {
                 name='title'
                 value={this.context.title}
                 required
+                placeholder='Chicago Food Pantry'
               />
               <label htmlFor='content'>Description:</label>
-              <input type='text' name='content' value={this.context.content} />
+              <input
+                type='text'
+                name='content'
+                value={this.context.content}
+                placeholder='Consistent local supplies'
+              />
               <label htmlFor='zipcode'>Zipcode:</label>
               <input
-                type='select'
+                placeholder='60614'
+                type='text'
                 name='zipcode'
                 value={this.context.zipcode}
+                required
+                maxLength='5'
+                pattern='[0-9]{5}'
               />
               <button type='submit' className='Add_Submit_Button'>
                 Submit
