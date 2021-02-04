@@ -1,6 +1,9 @@
 import React from 'react';
 import NavBar from '../Nav/NavBar';
-import placeholder from '../../Images/Convention-logo.png';
+import box from '../../Images/box.png';
+import apple from '../../Images/apple.png';
+import signal from '../../Images/signal.png';
+import silverware from '../../Images/silverware.png';
 import './Mission.css';
 
 export default function Mission() {
@@ -13,10 +16,10 @@ export default function Mission() {
         <div>
           <img
             className='logo-main'
-            src={placeholder}
+            src={apple}
             alt='placeholder'
-            width='176px'
-            height='161px'
+            width='150px'
+            height='150px'
           />
           <div className='main-paragraph'>
             <p>
@@ -29,10 +32,10 @@ export default function Mission() {
         <div>
           <img
             className='logo-main'
-            src={placeholder}
+            src={signal}
             alt='placeholder'
-            width='176px'
-            height='161px'
+            width='150px'
+            height='150px'
           />
           <div className='main-paragraph'>
             <p>
@@ -46,10 +49,10 @@ export default function Mission() {
         <div>
           <img
             className='logo-main'
-            src={placeholder}
+            src={box}
             alt='placeholder'
-            width='176px'
-            height='161px'
+            width='150px'
+            height='150px'
           />
           <div className='main-paragraph'>
             <p>
@@ -61,10 +64,10 @@ export default function Mission() {
         <div>
           <img
             className='logo-main'
-            src={placeholder}
+            src={silverware}
             alt='placeholder'
-            width='176px'
-            height='161px'
+            width='150px'
+            height='150px'
           />
           <div className='main-paragraph'>
             <p>

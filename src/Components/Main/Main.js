@@ -1,15 +1,13 @@
 import React from 'react';
 import './Main.css';
 import { Link } from 'react-router-dom';
-import placeholder from '../../Images/Convention-logo.png';
+import placeholder from '../../Images/rootsnip.png';
 // import background from '../../Images/rootsnip.png';
 import NavBar from '../Nav/NavBar';
 
 export default function Main() {
   return (
     <div className='border-main'>
-      {/* <img src={background} alt='' srcset='' /> */}
-      {/* <header className='tiny__header'></header> */}
       <section className='App-header'>
         <NavBar />
       </section>
@@ -20,8 +18,8 @@ export default function Main() {
               className='logo-main'
               src={placeholder}
               alt='placeholder'
-              width='176px'
-              height='161px'
+              width='435px'
+              height='365px'
             />
           </h1>
         </div>
@@ -35,7 +33,6 @@ export default function Main() {
         </div>
       </section>
       <br />
-      {/* <footer className='tiny__footer'>&#169;</footer> */}
     </div>
   );
 }
