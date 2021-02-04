@@ -26,6 +26,7 @@ export default class AddResource extends Component {
       <div>
         <NavBar />
         <div>
+          <h1>Add a Resource</h1>
           <form className='add_resource_form' onSubmit={this.handleSubmit}>
             <div className='add_resource_form_css'>
               <label htmlFor='title'>Title:</label>
