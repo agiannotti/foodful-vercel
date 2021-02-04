@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.css';
 import { Link } from 'react-router-dom';
-import placeholder from '../../Images/rootsnip.png';
+import logo from '../../Images/rootsnip.png';
 // import background from '../../Images/rootsnip.png';
 import NavBar from '../Nav/NavBar';
 
@@ -13,15 +13,13 @@ export default function Main() {
       </section>
       <section className='main-section'>
         <div>
-          <h1>
-            <img
-              className='logo-main'
-              src={placeholder}
-              alt='placeholder'
-              width='435px'
-              height='365px'
-            />
-          </h1>
+          <img
+            className='logo-main'
+            src={logo}
+            alt='logo'
+            width='435px'
+            height='365px'
+          />
         </div>
         <div className='main-paragraph'>
           <h1>Locate free food, or provide a bit of your own.</h1>

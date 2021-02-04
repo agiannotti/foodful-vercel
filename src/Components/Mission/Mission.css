@@ -13,8 +13,9 @@
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
   border-radius: 18px;
   color: #fdfdfd;
-  width: 90%;
+  width: 88%;
   margin: auto;
+  height: 840px;
 }
 
 .main-paragraph {
@@ -22,14 +23,26 @@
   font-weight: 500;
   margin: auto;
   width: 80%;
-  padding: 25px;
+  padding-top: 45px;
+  padding-bottom: 75px;
 }
 
 .bottom-section {
   color: #000000;
+  width: 88%;
+  margin: auto;
   padding-top: 70px;
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .main-paragraph {
+    width: 50%;
+  }
+  .middle-section {
+    width: 60%;
+  }
 }

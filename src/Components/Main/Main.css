@@ -2,21 +2,15 @@
   font-size: 10px;
   background-color: #ffffff;
   text-align: center;
-  /* flex-direction: column; */
-  /* padding-top: 45px; */
-  /* height: 90px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
   position: fixed;
-  top: 59%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 900px;
 }
 
 .main-section h1 {
   font-size: 20px;
-  /* margin-top: 45px; */
 }
 
 .main-search {
@@ -29,6 +23,8 @@
   border-radius: 17px;
   font-size: 28px;
   margin: 100px;
+  position: relative;
+  bottom: 100px;
 }
 .main-search:hover {
   cursor: pointer;
@@ -40,4 +36,12 @@
   text-decoration: none;
   position: relative;
   right: -12px;
+  top: 40px;
 }
+/* .tiny__footer {
+  display: flex;
+  font-size: 10px;
+  background-color: #3d3d3d;
+  height: 12px;
+  color: #ffffff;
+} */
