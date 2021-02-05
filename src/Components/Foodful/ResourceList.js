@@ -2,35 +2,44 @@ import React, { Component } from 'react';
 import './ResourceList.css';
 import { Link } from 'react-router-dom';
 import FoodfulContext from '../../Context/FoodfulContext';
+import moment from 'moment';
 
 export default class ResourceList extends Component {
   static contextType = FoodfulContext;
 
+  state = {
+    count: 0,
+  };
+
+  handleClick = () => {
+    this.setState(({ count }) => ({ count: count + 1 }));
+  };
+
   render() {
     const { resource } = this.props;
-    console.log(
-      'date_published',
-      resource.date_published.toLocaleString('en-US', { timeZone: 'UTC' })
-    );
+    let time = moment(resource.date_published).subtract(1, 'days').calendar();
 
     return (
       <div className='Resource__details'>
         <h2 className='Resource__heading'>{resource.title}</h2>
         <div className='Resource__desc'>
           <p className='Resource__item'>{resource.content}</p>
-          <p className='Resource__item'>{resource.zipcode}</p>
-          <p className='Resource__item'>{resource.date_published}</p>
-          {/* <Link to='/comment'>
-            <button className='Add_Comment_Button' type='submit'>
-              Add Comment
-            </button>
-          </Link> */}
-          <Link to={`/edit/${resource.id}`}>
-            <button className='Edit_Details_Button' type='submit'>
-              Edit Details
-            </button>
-          </Link>
+          <p className='Resource__item'>Area Code: {resource.zipcode}</p>
+          <p className='Resource__item'>Posted: {time}</p>
         </div>
+        <Link to={`/edit/${resource.id}`}>
+          <button className='Edit_Details_Button' type='submit'>
+            Edit
+          </button>
+        </Link>
+        <button
+          className='Verify_Details_Button'
+          type='submit'
+          onClick={this.handleClick}
+        >
+          Verify
+        </button>
+        <div className='verifiedCount'>{this.state.count}</div>
       </div>
     );
   }

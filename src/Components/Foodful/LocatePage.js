@@ -49,9 +49,9 @@ export default class LocatePage extends Component {
             </div>
             <Link to='/add'>
               <div>
-                <button className='add_button' type='button'>
+                {/* <button className='add_button' type='button'>
                   Add a Resource
-                </button>
+                </button> */}
               </div>
             </Link>
           </div>
