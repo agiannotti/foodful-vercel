@@ -15,7 +15,6 @@
 
 .main-search {
   text-align: center;
-  /* filter: drop-shadow(0 0.1rem 0.1rem #000000); */
   background-color: #c7b3b3;
   width: 200px;
   height: 90px;
@@ -38,10 +37,3 @@
   right: -12px;
   top: 40px;
 }
-/* .tiny__footer {
-  display: flex;
-  font-size: 10px;
-  background-color: #3d3d3d;
-  height: 12px;
-  color: #ffffff;
-} */
