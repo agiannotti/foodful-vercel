@@ -30,7 +30,7 @@ export default class AddResource extends Component {
           <form className='add_resource_form' onSubmit={this.handleSubmit}>
             <div className='add_resource_form_css'>
               <label htmlFor='title'>Title:</label>
-              <input
+              <textarea
                 type='text'
                 name='title'
                 value={this.context.title}
@@ -38,7 +38,7 @@ export default class AddResource extends Component {
                 placeholder='Chicago Food Pantry'
               />
               <label htmlFor='content'>Description:</label>
-              <input
+              <textarea
                 type='text'
                 name='content'
                 value={this.context.content}

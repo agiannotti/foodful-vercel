@@ -1,11 +1,11 @@
 .Resource__main {
-  display: flex;
-  flex-direction: column;
   border: none;
   border-radius: 13px;
 }
 
 .Resource__details {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   width: 92%;
   height: auto;
@@ -19,6 +19,28 @@
   background-color: #523d3d;
   filter: drop-shadow(0 0.1rem 0.1rem #000000);
   overflow-wrap: break-word;
+}
+
+@media (min-width: 1000px) {
+  .Resource__details {
+    height: 500px;
+    width: 400px;
+    margin: 3px;
+    overflow: scroll;
+  }
+  .Resource__details::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .List_Container {
+    display: flex;
+    margin: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .Resource__heading {

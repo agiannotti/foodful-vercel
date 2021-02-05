@@ -39,3 +39,16 @@
   border: none;
   text-decoration: none;
 }
+
+@media (min-width: 800px) {
+  .logo-main {
+    margin-top: 85px;
+  }
+
+  .splash-paragraph {
+    margin-top: 30px;
+  }
+  .main-search {
+    margin-top: 60px;
+  }
+}
