@@ -64,7 +64,7 @@ export default class EditResource extends Component {
           >
             <div className='edit_resource_form_css'>
               <label htmlFor='title'>Title:</label>
-              <input
+              <textarea
                 value={this.state.title}
                 type='text'
                 name='title'
@@ -73,7 +73,7 @@ export default class EditResource extends Component {
                 required
               />
               <label htmlFor='content'>Content:</label>
-              <input
+              <textarea
                 value={this.state.content}
                 type='text'
                 name='content'
@@ -89,14 +89,17 @@ export default class EditResource extends Component {
                 id='zipcode'
                 onChange={(e) => this.handleFormChange(e)}
                 required
+                placeholder='60614'
+                maxLength='5'
+                pattern='[0-9]{5}'
               />
-              <button className='Edit_Submit_Button' type='submit'>
-                Save Edit
-              </button>
-              <div className='error_handle'>{response}</div>
-              <div>
+              <div className='editButtons'>
+                <button className='Edit_Submit_Button' type='submit'>
+                  Save
+                </button>
                 <DeleteButton resource={id} />
               </div>
+              <div className='error_handle'>{response}</div>
             </div>
           </form>
         </div>

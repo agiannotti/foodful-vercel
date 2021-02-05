@@ -56,7 +56,7 @@ const RightNav = ({ open }) => {
       <StyledLink to='/'>Home</StyledLink>
       <StyledLink to='/mission'>Mission</StyledLink>
       <StyledLink to='/locate'>Locate</StyledLink>
-      <StyledLink to='/contact'>Contact</StyledLink>
+      <StyledLink to='/add'>Provide</StyledLink>
     </Ul>
   );
 };
