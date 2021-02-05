@@ -13,7 +13,7 @@ export default function Main() {
       </section>
       <section className='main-section'>
         <div className='logo-main'>
-          <img src={logo} alt='logo' width='235px' height='325px' />
+          <img src={logo} alt='logo' width='245px' height='325px' />
         </div>
         <div className='splash-paragraph'>
           <h1>Locate free food, or provide a bit of your own.</h1>
