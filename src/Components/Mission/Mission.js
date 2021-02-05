@@ -71,8 +71,9 @@ export default function Mission() {
           />
           <div className='main-paragraph'>
             <p>
-              If you're hungry, or you need to feed your family, you can use
-              this app to search for free food supplies within your community.
+              If you're hungry, or if you need to feed your family or your pets,
+              you can use this app to search for free food supplies within your
+              community.
             </p>
           </div>
         </div>
