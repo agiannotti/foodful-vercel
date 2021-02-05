@@ -2,11 +2,11 @@
   font-size: 10px;
   background-color: #ffffff;
   text-align: center;
-  position: fixed;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 .main-section h1 {
@@ -14,26 +14,28 @@
 }
 
 .main-search {
-  text-align: center;
   background-color: #c7b3b3;
   width: 200px;
   height: 90px;
   border: 1px solid #3d3d3d;
   border-radius: 17px;
   font-size: 28px;
-  margin: 100px;
-  position: relative;
-  bottom: 100px;
+  margin-top: 45px;
 }
 .main-search:hover {
   cursor: pointer;
   filter: drop-shadow(0 0 0.1rem #000000);
 }
 
+.splash-paragraph {
+  padding: 20px 0;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
 .logo-main {
+  margin-top: 45px;
   border: none;
   text-decoration: none;
-  position: relative;
-  right: -12px;
-  top: 40px;
 }

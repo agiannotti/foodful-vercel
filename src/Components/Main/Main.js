@@ -12,16 +12,10 @@ export default function Main() {
         <NavBar />
       </section>
       <section className='main-section'>
-        <div>
-          <img
-            className='logo-main'
-            src={logo}
-            alt='logo'
-            width='435px'
-            height='365px'
-          />
+        <div className='logo-main'>
+          <img src={logo} alt='logo' width='235px' height='325px' />
         </div>
-        <div className='main-paragraph'>
+        <div className='splash-paragraph'>
           <h1>Locate free food, or provide a bit of your own.</h1>
         </div>
         <div>
