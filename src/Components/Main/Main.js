@@ -2,7 +2,6 @@ import React from 'react';
 import './Main.css';
 import { Link } from 'react-router-dom';
 import logo from '../../Images/rootsnip.png';
-// import background from '../../Images/rootsnip.png';
 import NavBar from '../Nav/NavBar';
 
 export default function Main() {
@@ -24,7 +23,6 @@ export default function Main() {
           </Link>
         </div>
       </section>
-      <br />
     </div>
   );
 }
