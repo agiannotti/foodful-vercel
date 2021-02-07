@@ -91,9 +91,6 @@
   background-color: #e2e2e2;
   margin-left: 4px;
   border: 1px solid black;
-  position: fixed;
-  bottom: 3px;
-  right: 3px;
 }
 
 .Verify_Details_Button {
@@ -105,17 +102,10 @@
   width: 75px;
   border-radius: 8px;
   background-color: #e2e2e2;
-  margin-left: 4px;
   border: 1px solid black;
-  position: fixed;
-  bottom: 3px;
-  left: 0px;
-}
-
-.verifiedCount {
-  position: fixed;
-  bottom: 3px;
-  left: 90px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .Edit_Details_Button:hover {

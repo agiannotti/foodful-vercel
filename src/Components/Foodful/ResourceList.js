@@ -26,6 +26,7 @@ export default class ResourceList extends Component {
           <p className='Resource__item'>{resource.content}</p>
           <p className='Resource__item'>Area Code: {resource.zipcode}</p>
           <p className='Resource__item'>Posted: {time}</p>
+          <p className='verifiedCount'>Verified: {this.state.count}</p>
         </div>
         <Link to={`/edit/${resource.id}`}>
           <button className='Edit_Details_Button' type='submit'>
@@ -39,7 +40,6 @@ export default class ResourceList extends Component {
         >
           Verify
         </button>
-        <div className='verifiedCount'>{this.state.count}</div>
       </div>
     );
   }
