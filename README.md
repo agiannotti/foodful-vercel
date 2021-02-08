@@ -1,6 +1,6 @@
 # Foodful App
 
-[Live Client Deployment](https://foodful.agiannotti.vercel.app/)
+[Live Client Deployment](https://foodful.agiannotti.vercel.app/)  
 [Live Server Deployment](https://enigmatic-meadow-50986.herokuapp.com)
 
 ## Summary 
