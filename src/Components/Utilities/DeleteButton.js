@@ -8,15 +8,12 @@ export default class DeleteButton extends Component {
 
   handleDelete = (id) => {
     const { removeFromResourceList } = this.context;
-    // console.log('props', this.props);
-    // this.props.history.push('/locate');
 
     FoodfulApiService.deleteById(id)
       .then((res) => {
         removeFromResourceList(id);
       })
       .catch(this.context.setError);
-    // console.log('render console', this.context.resourceList);
   };
 
   render() {

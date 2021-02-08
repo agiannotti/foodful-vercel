@@ -42,7 +42,6 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      // console.log('stuff', res.json());
       return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
     });
   },

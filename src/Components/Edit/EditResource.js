@@ -16,9 +16,7 @@ export default class EditResource extends Component {
   };
 
   componentDidMount = () => {
-    console.log('this', this.props);
     FoodfulApiService.getById(this.props.match.params.id).then((resource) => {
-      // console.log('resource', resource);
       this.setState({
         title: resource.title,
         content: resource.content,
@@ -63,36 +61,42 @@ export default class EditResource extends Component {
             onSubmit={(e) => this.handleEditSubmit(e)}
           >
             <div className='edit_resource_form_css'>
-              <label htmlFor='title'>Title:</label>
-              <textarea
-                value={this.state.title}
-                type='text'
-                name='title'
-                id='title'
-                onChange={(e) => this.handleFormChange(e)}
-                required
-              />
-              <label htmlFor='content'>Content:</label>
-              <textarea
-                value={this.state.content}
-                type='text'
-                name='content'
-                id='content'
-                onChange={(e) => this.handleFormChange(e)}
-                required
-              />
-              <label htmlFor='zipcode'>Zipcode:</label>
-              <input
-                value={this.state.zipcode}
-                type='text'
-                name='zipcode'
-                id='zipcode'
-                onChange={(e) => this.handleFormChange(e)}
-                required
-                placeholder='60614'
-                maxLength='5'
-                pattern='[0-9]{5}'
-              />
+              <label htmlFor='title'>
+                Title:
+                <textarea
+                  value={this.state.title}
+                  type='text'
+                  name='title'
+                  id='title'
+                  onChange={(e) => this.handleFormChange(e)}
+                  required
+                />
+              </label>
+              <label htmlFor='content'>
+                Content:
+                <textarea
+                  value={this.state.content}
+                  type='text'
+                  name='content'
+                  id='content'
+                  onChange={(e) => this.handleFormChange(e)}
+                  required
+                />
+              </label>
+              <label htmlFor='zipcode'>
+                Zipcode:
+                <input
+                  value={this.state.zipcode}
+                  type='text'
+                  name='zipcode'
+                  id='zipcode'
+                  onChange={(e) => this.handleFormChange(e)}
+                  required
+                  placeholder='60614'
+                  maxLength='5'
+                  pattern='[0-9]{5}'
+                />
+              </label>
               <div className='editButtons'>
                 <button className='Edit_Submit_Button' type='submit'>
                   Save

@@ -9,7 +9,6 @@
 
 //   handleSubmit = (e) => {
 //     e.preventDefault();
-//     console.log('clicked', e);
 //     // const modified = new Date().toISOString();
 //     this.props.history.push('/locate');
 

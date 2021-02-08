@@ -19,7 +19,7 @@ export default function Main() {
         </div>
         <div>
           <Link to='/locate'>
-            <button className='main-search'>Search</button>
+            <button className='main-search'>Find a Provider</button>
           </Link>
         </div>
       </section>

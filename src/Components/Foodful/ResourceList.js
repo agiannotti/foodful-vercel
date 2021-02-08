@@ -33,13 +33,13 @@ export default class ResourceList extends Component {
             Edit
           </button>
         </Link>
-        <button
+        {/* <button
           className='Verify_Details_Button'
           type='submit'
           onClick={this.handleClick}
         >
           Verify
-        </button>
+        </button> */}
       </div>
     );
   }

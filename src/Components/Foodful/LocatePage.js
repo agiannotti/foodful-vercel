@@ -5,7 +5,6 @@ import NavBar from '../Nav/NavBar';
 import FoodfulContext from '../../Context/FoodfulContext';
 import FoodfulApiService from '../../Services/FoodfulApiService';
 import ResourceList from './ResourceList';
-import { Link } from 'react-router-dom';
 
 export default class LocatePage extends Component {
   static contextType = FoodfulContext;
@@ -34,26 +33,7 @@ export default class LocatePage extends Component {
           <div className='Resource__header'>
             <div>
               <h2>Available Resources</h2>
-              {/* <form className='Resource__radio'>
-                <label>Location Type</label>
-                <div>
-                  <select>
-                    <option value='item-1'></option>
-                    <option value='item-2'>Food Drive</option>
-                    <option value='item-3'>Public Park</option>
-                    <option value='item-3'>Shelter</option>
-                    <option value='item-3'>Custom</option>
-                  </select>
-                </div>
-              </form> */}
             </div>
-            <Link to='/add'>
-              <div>
-                {/* <button className='add_button' type='button'>
-                  Add a Resource
-                </button> */}
-              </div>
-            </Link>
           </div>
           <div className='List_Container'>
             {error ? <p className='angry'>Error</p> : this.renderResource()}
