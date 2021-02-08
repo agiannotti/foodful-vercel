@@ -1,5 +1,5 @@
 const config = {
-  API_ENDPOINT: 'https://obscure-ridge-25630.herokuapp.com/api',
+  API_ENDPOINT: 'https://enigmatic-meadow-50986.herokuapp.com/api',
   API_KEY: 'extra-secret',
 };
 
