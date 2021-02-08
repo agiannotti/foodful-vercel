@@ -32,10 +32,15 @@ npm start
 # Mission Page
 
 ![Foodful Mission](https://user-images.githubusercontent.com/72902345/107166753-8dc08e00-697c-11eb-8b2a-d442d1448a75.PNG)
-•
 
-•
+## Technology Used
 
-•
+Client:
 
-•
+• React Native, Javascript, CSS, HTML
+
+• Vercel
+
+• Jest
+
+• Babel, Webpack, React Router
