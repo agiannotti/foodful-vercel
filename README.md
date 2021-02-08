@@ -1,7 +1,7 @@
 # Foodful App
 
-[Live Server Deployment](https://enigmatic-meadow-50986.herokuapp.com)
 [Live Client Deployment](https://foodful.agiannotti.vercel.app/)
+[Live Server Deployment](https://enigmatic-meadow-50986.herokuapp.com)
 
 ## Summary 
 Foodful aims to unify communities and feed hungry families and individuals by creating a platform for people to share resources. If you're looking to donate or to find food you can utilize this app to easily and quickly find what you need. 
@@ -15,7 +15,7 @@ npm start
 
 ## User stories
 
-## Users can add locations and verify the source to organize and communicate about resources that are currently available for pickup or donation
+## Users can add locations to organize and communicate regarding resources that are currently available for pickup or donation
 
 ![Foodful Splash](https://user-images.githubusercontent.com/72902345/107166552-f5c2a480-697b-11eb-9d01-0a0bd52d3144.PNG)
 
@@ -38,7 +38,7 @@ npm start
 
 Client:
 
-• React Native, Javascript, CSS, HTML
+• React, Javascript, CSS, HTML
 
 • Vercel
 
