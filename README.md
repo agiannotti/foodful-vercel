@@ -1,6 +1,7 @@
 # Foodful App
 
-[Live Deployment](https://foodful.agiannotti.vercel.app/)
+[Live Server Deployment](https://enigmatic-meadow-50986.herokuapp.com)
+[Live Client Deployment](https://foodful.agiannotti.vercel.app/)
 
 ## Summary 
 Foodful aims to unify communities and feed hungry families and individuals by creating a platform for people to share resources. If you're looking to donate or to find food you can utilize this app to easily and quickly find what you need. 
