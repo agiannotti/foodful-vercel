@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FoodfulContext from '../../Context/FoodfulContext';
 import FoodfulApiService from '../../Services/FoodfulApiService';
+import './DeleteButton.css';
 
 export default class DeleteButton extends Component {
   static contextType = FoodfulContext;
@@ -16,12 +17,11 @@ export default class DeleteButton extends Component {
   };
 
   render() {
-    const { resource } = this.props;
     return (
       <div>
         <button
           className='delete_button'
-          onClick={() => this.handleDelete(resource.id)}
+          onClick={() => this.handleDelete(this.props.id)}
         >
           Delete
         </button>

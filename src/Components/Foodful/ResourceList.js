@@ -3,6 +3,7 @@ import './ResourceList.css';
 import { Link } from 'react-router-dom';
 import FoodfulContext from '../../Context/FoodfulContext';
 import moment from 'moment';
+import DeleteButton from '../Utilities/DeleteButton';
 
 export default class ResourceList extends Component {
   static contextType = FoodfulContext;
@@ -32,6 +33,7 @@ export default class ResourceList extends Component {
             Edit
           </button>
         </Link>
+        <DeleteButton id={resource.id} />
       </div>
     );
   }

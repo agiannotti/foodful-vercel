@@ -7,6 +7,7 @@ import Mission from '../Mission/Mission';
 import Locate from '../Foodful/LocatePage';
 import AddResource from '../Add/AddResource';
 import EditPage from '../Edit/EditPage';
+import DeleteButton from '../Utilities/DeleteButton';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path={'/locate'} component={Locate} />
           <Route path={'/add'} component={AddResource} />
           <Route path={'/edit/:id'} component={EditPage} />
+          <Route component={DeleteButton} />
         </Switch>
       </Router>
     </div>

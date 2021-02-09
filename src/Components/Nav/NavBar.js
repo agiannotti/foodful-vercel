@@ -13,7 +13,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   .logo {
     padding: 3px 0 12px 12px;
-    font-weight: 1200px;
     font-size: 18px;
     color: black;
 

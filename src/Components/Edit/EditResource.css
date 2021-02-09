@@ -56,22 +56,6 @@ h1 {
   height: 50px;
   width: 80px;
   background-color: #efefef;
-  margin-left: 3px;
-}
-
-.delete_button {
-  border: 1px solid #3d3d3d;
-  text-align: center;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 20px;
-  color: #3d3d3d;
-  letter-spacing: -1px;
-  font-weight: 300;
-  height: 50px;
-  width: 80px;
-  background-color: #efefef;
-  margin-left: 3px;
 }
 
 .Edit_Submit_Button:hover {

@@ -3,7 +3,6 @@ import NavBar from '../Nav/NavBar';
 import './EditResource.css';
 import FoodfulContext from '../../Context/FoodfulContext';
 import FoodfulApiService from '../../Services/FoodfulApiService';
-import DeleteButton from '../Utilities/DeleteButton';
 
 export default class EditResource extends Component {
   static contextType = FoodfulContext;
@@ -46,7 +45,6 @@ export default class EditResource extends Component {
 
   render() {
     const { error } = this.context;
-    const id = this.props.match.params.id;
     let response;
     if (error) {
       response = <div>Error</div>;
@@ -101,7 +99,6 @@ export default class EditResource extends Component {
                 <button className='Edit_Submit_Button' type='submit'>
                   Save
                 </button>
-                <DeleteButton resource={id} />
               </div>
               <div className='error_handle'>{response}</div>
             </div>

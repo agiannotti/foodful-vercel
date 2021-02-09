@@ -1,6 +1,5 @@
 import config from '../config';
 const ResourceURL = `${config.API_ENDPOINT}/resources`;
-const CommentURL = `${config.API_ENDPOINT}/comments`;
 const Authorization = `Bearer ${config.API_KEY}`;
 
 const FoodfulApiService = {
@@ -54,7 +53,9 @@ const FoodfulApiService = {
         Authorization: Authorization,
       },
     }).then((res) => {
-      return !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json();
+      if (!res.ok) {
+        return res.json().then((e) => Promise.reject(e));
+      }
     });
   },
 
@@ -72,8 +73,6 @@ const FoodfulApiService = {
       }
     });
   },
-}
-
-
+};
 
 export default FoodfulApiService;

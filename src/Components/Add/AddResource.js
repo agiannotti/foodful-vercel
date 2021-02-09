@@ -8,9 +8,6 @@ export default class AddResource extends Component {
   static contextType = FoodfulContext;
 
   handleSubmit = (e) => {
-    e.preventDefault();
-    this.props.history.push('/locate');
-
     FoodfulApiService.postNewResource(
       e.target.title.value,
       e.target.content.value,
@@ -19,6 +16,7 @@ export default class AddResource extends Component {
       .then((res) => this.context.setResource(res))
 
       .catch(this.context.setError);
+    this.props.history.push('/locate');
   };
 
   render() {

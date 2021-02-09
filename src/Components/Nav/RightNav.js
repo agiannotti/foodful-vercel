@@ -34,7 +34,6 @@ const Ul = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-  /* text-decoration: none; */
   color: #ccc;
   font-size: 25px;
   padding: 15px 0 5px 15px;
@@ -53,10 +52,18 @@ const StyledLink = styled(Link)`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <StyledLink to='/'>Home</StyledLink>
-      <StyledLink to='/mission'>Mission</StyledLink>
-      <StyledLink to='/locate'>Locate</StyledLink>
-      <StyledLink to='/add'>Provide</StyledLink>
+      <li>
+        <StyledLink to='/'>Home</StyledLink>
+      </li>
+      <li>
+        <StyledLink to='/mission'>Mission</StyledLink>
+      </li>
+      <li>
+        <StyledLink to='/locate'>Locate</StyledLink>
+      </li>
+      <li>
+        <StyledLink to='/add'>Provide</StyledLink>
+      </li>
     </Ul>
   );
 };
