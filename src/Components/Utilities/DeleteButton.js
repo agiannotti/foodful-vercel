@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Nav from '../Nav/Nav';
 import FoodfulContext from '../../Context/FoodfulContext';
 import FoodfulApiService from '../../Services/FoodfulApiService';
 
